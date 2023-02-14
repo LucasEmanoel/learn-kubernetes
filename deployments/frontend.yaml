@@ -22,4 +22,6 @@ spec:
       containers:
         - name: frontend-container
           image: nginx
-  replicas: 3
+  strategy:
+    type: Recreate
+  replicas: 6
